@@ -33,7 +33,7 @@ padding: 0 0.75em 0 0;
 }
 
 .interest button {
-	font-size: medium;
+	font-size: large;
 }
 
 .prev-year {
@@ -51,13 +51,12 @@ padding: 0 0.75em 0 0;
 }
 
 .signup label {
-	margin-bottom: 10px;
-	margin-right:10%;
-	font-size:20px
+	margin-right: 10%;
+	font-size:22px
 }
 
 .signup-box {
-	margin-top: px;
+	margin-top: 10px;
 	width: 50%;
 }
 
@@ -85,7 +84,7 @@ input {
 	height: 20px;
 	padding: 10px 15px 10px 10px;
 	margin: 5px;
-	font-size: medium;
+	font-size: large;
 }
 
 
