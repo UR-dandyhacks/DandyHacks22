@@ -1,0 +1,95 @@
+body {
+	background-image: url(img/imperfections.png), url(img/top_section.png);
+	background-repeat: repeat, no-repeat;
+	background-size: 50%, 70%;
+	background-position-x: 5%, center;
+	background-position-y: 0%, -20%;
+	background-color: #D2ECE1;
+}
+
+ul.icons {
+list-style: none;
+position: absolute; /*absolute for now, awaiting bigger container*/
+right: 10%;
+bottom: 10%;
+}
+
+ul.icons li {
+display: inline-block;
+padding: 0 0.75em 0 0;
+}
+
+.interest {
+	display: flex;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 20%;
+	align-items: center;
+	width: 60%;
+	height: 10%;
+}
+
+.interest button {
+	font-size: medium;
+}
+
+.prev-year {
+	flex: 1;
+	justify-content: flex-start;
+	float: left;
+	width: 50%; 
+}
+
+.signup {
+	flex: 1;
+	justify-content: flex-end;
+	width: 50%;
+	text-align: end;
+}
+
+.signup label {
+	margin-bottom: 10px;
+	margin-right:10%;
+	font-size:20px
+}
+
+.signup-box {
+	margin-top: px;
+	width: 50%;
+}
+
+button {
+	background-color: #b7d5c7;
+	text-align: center;
+	/* border-radius: 5px; */
+}
+
+button:hover {
+	background-color: #62726a;
+}
+
+button:active {
+	background-color: #363f3a;
+}
+
+.prev-year-button {
+	padding: 2% 8%;
+	margin: 10px
+}
+
+input {
+	background-color: #ddebe5;
+	height: 20px;
+	padding: 10px 15px 10px 10px;
+	margin: 5px;
+	font-size: medium;
+}
+
+
+#signup-button {
+	height: 40px;
+	font-weight: bold;
+}
