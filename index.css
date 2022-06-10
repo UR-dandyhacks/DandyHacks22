@@ -8,15 +8,15 @@ body {
 }
 
 ul.icons {
-list-style: none;
-position: absolute; /*absolute for now, awaiting bigger container*/
-right: 10%;
-bottom: 10%;
+	list-style: none;
+	position: absolute; /*absolute for now, awaiting bigger container*/
+	right: 10%;
+	bottom: 10%;
 }
 
 ul.icons li {
-display: inline-block;
-padding: 0 0.75em 0 0;
+	display: inline-block;
+	padding: 0 0.75em 0 0;
 }
 
 .interest {
