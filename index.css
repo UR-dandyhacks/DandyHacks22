@@ -7,6 +7,11 @@ body {
 	background-color: #D2ECE1;
 }
 
+/* placeholder font change, TODO remove this later */
+* {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
 ul.icons {
 list-style: none;
 position: absolute; /*absolute for now, awaiting bigger container*/
@@ -82,10 +87,12 @@ input {
 	padding: 10px 15px 10px 10px;
 	margin: 5px;
 	font-size: large;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
 #signup-button {
 	height: 40px;
 	font-weight: bold;
+	margin: 5px
 }
