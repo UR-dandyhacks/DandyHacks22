@@ -28,7 +28,7 @@ padding: 0 0.75em 0 0;
 	right: 0;
 	bottom: 20%;
 	align-items: center;
-	width: 60%;
+	width: 70%;
 	height: 10%;
 }
 
@@ -37,21 +37,18 @@ padding: 0 0.75em 0 0;
 }
 
 .prev-year {
-	flex: 1;
+	flex: 2;
 	justify-content: flex-start;
 	float: left;
-	width: 50%; 
 }
 
 .signup {
 	flex: 1;
 	justify-content: flex-end;
-	width: 50%;
-	text-align: end;
+	text-align: start;
 }
 
 .signup label {
-	margin-right: 10%;
 	font-size:22px
 }
 
@@ -63,7 +60,7 @@ padding: 0 0.75em 0 0;
 button {
 	background-color: #b7d5c7;
 	text-align: center;
-	/* border-radius: 5px; */
+	border-radius: 5px;
 }
 
 button:hover {
