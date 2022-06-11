@@ -43,6 +43,14 @@ div.mlh a {
 	align-items: center;
 	width: 70%;
 	height: 10%;
+	
+	justify-content: space-around
+}
+
+@media screen and (max-width: 425px) {
+	.interest {
+			 flex-wrap: wrap;
+	 }
 }
 
 .interest button {
@@ -50,7 +58,7 @@ div.mlh a {
 }
 
 .prev-year {
-	flex: 2;
+	flex: 1.5;
 	justify-content: flex-start;
 	float: left;
 }
