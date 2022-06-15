@@ -3,7 +3,7 @@ body {
 	background-repeat: repeat, no-repeat;
 	background-size: 50%, 70%;
 	background-position-x: 5%, center;
-	background-position-y: 0%, -20%;
+	background-position-y: 0%, 15%;
 	background-color: #D2ECE1;
 }
 
@@ -106,9 +106,15 @@ input {
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-
 #signup-button {
 	height: 40px;
 	font-weight: bold;
 	margin: 5px
+}
+
+.end {
+	color: #7B988C;
+	bottom: 0px;
+	text-align: center;
+	margin-top: 700px;
 }
