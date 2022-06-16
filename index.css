@@ -9,7 +9,7 @@ body {
 
 /* placeholder font change, TODO remove this later */
 * {
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 ul.icons {
@@ -30,6 +30,20 @@ div.mlh a {
 	bottom: 60px;
 	right: 185px;
 	border: 5px;
+}
+
+button {
+	background-color: #A7D3C0;
+	text-align: center;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #80AB98;
+}
+
+button:active {
+	background-color: #62726a;
 }
 
 .interest {
@@ -58,43 +72,30 @@ div.mlh a {
 }
 
 .prev-year {
-	flex: 1.5;
+	flex: 1.75;
 	justify-content: flex-start;
 	float: left;
-}
-
-.signup {
-	flex: 1;
-	justify-content: flex-end;
-	text-align: start;
-}
-
-.signup label {
-	font-size:22px
-}
-
-.signup-box {
-	margin-top: 10px;
-	width: 50%;
-}
-
-button {
-	background-color: #b7d5c7;
-	text-align: center;
-	border-radius: 5px;
-}
-
-button:hover {
-	background-color: #62726a;
-}
-
-button:active {
-	background-color: #363f3a;
 }
 
 .prev-year-button {
 	padding: 2% 8%;
 	margin: 10px
+}
+
+.signup {
+	flex: 1;
+	justify-content: flex-end;
+	text-align: end;
+}
+
+.signup-button {
+	padding: 4.5% 20%;
+	margin: 10px;
+	font-weight: bold;
+}
+
+.signup button {
+	font-size: large
 }
 
 input {
@@ -103,13 +104,6 @@ input {
 	padding: 10px 15px 10px 10px;
 	margin: 5px;
 	font-size: large;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-#signup-button {
-	height: 40px;
-	font-weight: bold;
-	margin: 5px
 }
 
 .end {
