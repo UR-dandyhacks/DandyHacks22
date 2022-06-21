@@ -39,11 +39,16 @@ body {
 
 .actions ul.icons {
 	list-style: none;
+  padding-left: 0px;
 }
 
 .actions ul.icons li {
 	display: inline-block;
 	padding: 0 0 0 0.75em;
+}
+
+.actions ul.icons li:first-child {
+  padding: 0;
 }
 
 .actions ul.icons #email:hover {
@@ -71,11 +76,11 @@ body {
 	border: 5px;
 }
 
-button:hover {
+.actions button:hover {
 	background-color: #80AB98;
 }
 
-button:active {
+.actions button:active {
 	background-color: #62726a;
 }
 
@@ -85,11 +90,6 @@ button:active {
 	border-radius: 5px;
 }
 
-@media screen and (max-width: 425px) {
-	.interest {
-			 flex-wrap: wrap;
-	 }
-}
 
 .interest button {
 	font-size: medium;
@@ -102,7 +102,7 @@ button:active {
 }
 
 .prev-year-button {
-	padding: 2% 6%;
+	padding: 1.15em 3.25em;
 	margin: 10px
 }
 
@@ -113,7 +113,7 @@ button:active {
 }
 
 .signup-button {
-	padding: 4% 20%;
+	padding: 1.15em 5.25em;
 	font-weight: bold;
 }
 
@@ -139,4 +139,24 @@ input {
 	bottom: 5%;
 	text-align: center;
 	width: fit-content
+}
+
+@media screen and (max-width: 480px) {
+	.actions .interest {
+	  flex-wrap: wrap;
+    text-align: center;
+	}
+ 
+  .signup {
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  .actions .social {
+    text-align: center
+  }
+
+  .actions .mlh {
+    text-align: center;
+  }
 }
