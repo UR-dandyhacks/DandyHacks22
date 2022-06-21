@@ -24,6 +24,22 @@ ul.icons li {
 	padding: 0 0.75em 0 0;
 }
 
+ul.icons #email:hover {
+  content: url('img/Email_hover.png');
+}
+
+ul.icons #instagram:hover {
+  content: url('img/Instagram_hover.png');
+}
+
+ul.icons #facebook:hover {
+  content: url('img/Facebook_hover.png');
+}
+
+ul.icons #twitter:hover {
+  content: url('img/Twitter_hover.png');
+}
+
 div.mlh a {
 	color: #7B988C;
 	position: absolute;
