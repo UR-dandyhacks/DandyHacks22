@@ -12,46 +12,63 @@ body {
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
-ul.icons {
+.actions {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10%;
+}
+
+.actions > div {
+  width: 100%;
+  height: auto;
+}
+
+.actions .interest {
+  display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.actions .social {
+  text-align: right;
+}
+
+.actions ul.icons {
 	list-style: none;
-	position: absolute; /*absolute for now, awaiting bigger container*/
-	right: 10%;
-	bottom: 10%;
 }
 
-ul.icons li {
+.actions ul.icons li {
 	display: inline-block;
-	padding: 0 0.75em 0 0;
+	padding: 0 0 0 0.75em;
 }
 
-ul.icons #email:hover {
+.actions ul.icons #email:hover {
   content: url('img/Email_hover.png');
 }
 
-ul.icons #instagram:hover {
+.actions ul.icons #instagram:hover {
   content: url('img/Instagram_hover.png');
 }
 
-ul.icons #facebook:hover {
+.actions ul.icons #facebook:hover {
   content: url('img/Facebook_hover.png');
 }
 
-ul.icons #twitter:hover {
+.actions ul.icons #twitter:hover {
   content: url('img/Twitter_hover.png');
 }
 
-div.mlh a {
-	color: #7B988C;
-	position: absolute;
-	bottom: 60px;
-	right: 185px;
-	border: 5px;
+.actions .mlh {
+  text-align: right;
 }
 
-button {
-	background-color: #A7D3C0;
-	text-align: center;
-	border-radius: 5px;
+.actions .mlh a {
+	color: #7B988C;
+	border: 5px;
 }
 
 button:hover {
@@ -62,19 +79,10 @@ button:active {
 	background-color: #62726a;
 }
 
-.interest {
-	display: flex;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	bottom: 20%;
-	align-items: center;
-	width: 70%;
-	height: 10%;
-
-	justify-content: space-around
+.actions button {
+	background-color: #A7D3C0;
+	text-align: center;
+	border-radius: 5px;
 }
 
 @media screen and (max-width: 425px) {
@@ -88,7 +96,6 @@ button:active {
 }
 
 .prev-year {
-	margin-left: 10%;
 	flex: 1.75;
 	justify-content: flex-start;
 	float: right;
@@ -107,7 +114,6 @@ button:active {
 
 .signup-button {
 	padding: 4% 20%;
-	margin: 10px;
 	font-weight: bold;
 }
 
