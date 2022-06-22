@@ -1,12 +1,66 @@
 body {
-	background-image: url(img/imperfections.png), url(img/top_section.png);
+	background-image: url(img/imperfections.png), url(img/top\ section\ \(2\).png);
 	background-repeat: repeat, no-repeat;
-	background-size: 50%, 70%;
+	background-size: 50%, 55%;
 	background-position-x: 5%, center;
-	background-position-y: 0%, -10%;
+	background-position-y: 0%, -15%;
 	background-color: #D2ECE1;
 }
 
+
+.sparkles1 {
+	animation-name: animationOne;
+	animation-duration: 1.2s;
+  	animation-iteration-count: infinite;
+	top: -498%;	
+	left: 81%;
+	position:absolute;
+}
+
+.sparkles2 {
+	animation-name: animationTwo;
+	animation-duration: 1.8s;
+  	animation-iteration-count: infinite;
+	top: -230%;
+	left: 10%;
+	position:absolute;
+}
+
+@keyframes animationTwo {
+
+	0%{
+		top: -230%;	
+		left: 10%;
+	}
+	
+	50%{
+		top: -245%;
+		left: 13%;
+	}
+
+	100%{
+		top: -230%;	
+		left: 10%;
+	}
+	
+}
+
+@keyframes animationOne {
+	0%{
+		top: -498%;	
+		left: 81%;
+	}
+	
+	50%{
+		top: -505%;
+		left: 82%;
+	}
+
+	100%{
+		top: -498%;	
+		left: 81%;
+	}
+}
 /* placeholder font change, TODO remove this later */
 * {
 	font-family: 'Montserrat Alternates', sans-serif;
