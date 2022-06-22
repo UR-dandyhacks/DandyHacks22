@@ -8,58 +8,60 @@ body {
 }
 
 
-.sparkles1 {
+.sparkles {
 	animation-name: animationOne;
-	animation-duration: 1.2s;
+	animation-duration: 1s;
   	animation-iteration-count: infinite;
-	top: -498%;	
-	left: 81%;
+	top: 10%;	
+	left: 75%;
 	position:absolute;
 }
 
 .sparkles2 {
 	animation-name: animationTwo;
-	animation-duration: 1.8s;
+	animation-duration: 1.5s;
   	animation-iteration-count: infinite;
-	top: -230%;
-	left: 10%;
+	top: 43%;
+	left: 19%;
 	position:absolute;
+}
+
+@keyframes animationOne {
+
+	0%{
+		top: 10%;	
+		left: 75%;
+	}
+	
+	50%{
+		top: 8%;
+		left: 76%;
+	}
+
+	100%{
+		top: 10%;	
+		left: 75%;
+	}
+	
 }
 
 @keyframes animationTwo {
 
 	0%{
-		top: -230%;	
-		left: 10%;
+		top: 43%;
+		left: 19%;
 	}
 	
 	50%{
-		top: -245%;
-		left: 13%;
+		top: 41%;
+		left: 20%;
 	}
 
 	100%{
-		top: -230%;	
-		left: 10%;
+		top: 43%;
+		left: 19%;
 	}
 	
-}
-
-@keyframes animationOne {
-	0%{
-		top: -498%;	
-		left: 81%;
-	}
-	
-	50%{
-		top: -505%;
-		left: 82%;
-	}
-
-	100%{
-		top: -498%;	
-		left: 81%;
-	}
 }
 
 /* placeholder font change, TODO remove this later */
