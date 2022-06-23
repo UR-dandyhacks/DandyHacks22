@@ -8,12 +8,10 @@ body {
 }
 
 .top_section {
-
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 6%;
 	justify-content: center;
-
 }
 
 .top_section img {
