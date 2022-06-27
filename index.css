@@ -4,7 +4,7 @@ body {
 	background-size: 50%;
 	background-position-x: 5%;
 	background-position-y: 0%;
-	background-color: #D2ECE1;
+	background-color: #E2F5ED;
 }
 
 .top_section {
@@ -140,7 +140,7 @@ body {
 }
 
 .actions button:hover {
-	background-color: #80AB98;
+	background-color: #94CAB3;
 }
 
 .actions button:active {
@@ -148,7 +148,7 @@ body {
 }
 
 .actions button {
-	background-color: #A7D3C0;
+	background-color: #BDE3D3;
 	text-align: center;
 	border-radius: 5px;
 }
