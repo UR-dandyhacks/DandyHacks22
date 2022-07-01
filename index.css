@@ -17,7 +17,7 @@ body {
 
 .logo {
 	margin: 5px;
-	padding-top: 5%;
+	padding-top: 8%;
 	position: relative;
 }
 
@@ -31,11 +31,19 @@ body {
 	margin: auto;
 }
 
+.sparkles img, .sparkles2 img{
+	max-width: 100%;
+	max-height: 100%;
+   	width: auto;
+	height: auto;
+}
+
 .sparkles {
 	animation-name: animationOne;
 	animation-duration: 1.5s;
   	animation-iteration-count: infinite;
   	position: absolute;
+  	margin-right: 2px;
 }
 
 .sparkles2 {
@@ -68,17 +76,17 @@ body {
 
 	0%{
 		padding-top: 22%;
-		padding-right: 63%
+		padding-right: 73%
 	}
 	
 	50%{
 		padding-top: 21%;
-		padding-right: 61%;
+		padding-right: 71%;
 	}
 
 	100%{
 		padding-top: 22%;
-		padding-right: 63%;
+		padding-right: 73%;
 	}
 	
 }
