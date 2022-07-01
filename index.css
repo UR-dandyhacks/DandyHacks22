@@ -15,8 +15,7 @@ body {
 }
 
 .logo {
-	padding-left: 22%;
-	padding-right: 22%;
+	padding: auto;
 }
 
 .top_section img {
@@ -28,8 +27,6 @@ body {
 	animation-name: animationOne;
 	animation-duration: 1s;
   	animation-iteration-count: infinite;
-	top: 10%;	
-	left: 75%;
 	position:absolute;
 }
 
@@ -37,8 +34,6 @@ body {
 	animation-name: animationTwo;
 	animation-duration: 1.5s;
   	animation-iteration-count: infinite;
-	top: 43%;
-	left: 19%;
 	position:absolute;
 }
 
@@ -46,17 +41,17 @@ body {
 
 	0%{
 		top: 10%;	
-		left: 75%;
+		left: 77%;
 	}
 	
 	50%{
 		top: 8%;
-		left: 76%;
+		left: 78%;
 	}
 
 	100%{
 		top: 10%;	
-		left: 75%;
+		left: 77%;
 	}
 	
 }
@@ -65,17 +60,17 @@ body {
 
 	0%{
 		top: 43%;
-		left: 19%;
+		left: 15%;
 	}
 	
 	50%{
 		top: 41%;
-		left: 20%;
+		left: 16%;
 	}
 
 	100%{
 		top: 43%;
-		left: 19%;
+		left: 15%;
 	}
 	
 }
