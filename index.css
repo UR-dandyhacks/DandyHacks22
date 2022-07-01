@@ -5,6 +5,7 @@ body {
 	background-position-x: 5%;
 	background-position-y: 0%;
 	background-color: #E2F5ED;
+	margin: auto;
 }
 
 .top_section {
@@ -15,44 +16,50 @@ body {
 }
 
 .logo {
-	padding: 5px;
+	margin: 5px;
+	top: 10%;
+	position: relative;
+}
+
+.logo_container img{
+   	max-width: 100%;
+   	width: 100%;
+	height: 100%;
 }
 
 .top_section img {
-   	max-width: 100%;
-   	width: 100%;
-	height: auto;
+	margin: auto;
 }
 
 .sparkles {
 	animation-name: animationOne;
 	animation-duration: 1s;
   	animation-iteration-count: infinite;
-	position:absolute;
+  	position: absolute;
 }
 
 .sparkles2 {
 	animation-name: animationTwo;
 	animation-duration: 1.5s;
   	animation-iteration-count: infinite;
-	position:absolute;
+  	position: absolute;
 }
 
 @keyframes animationOne {
 
 	0%{
-		top: 10%;	
-		left: 77%;
+		padding-top: 2%;	
+		padding-left: 77%;
 	}
 	
 	50%{
-		top: 8%;
-		left: 78%;
+		padding-top: 3%;
+		padding-left: 78%;
 	}
 
 	100%{
-		top: 10%;	
-		left: 77%;
+		padding-top: 2%;	
+		padding-left: 77%;
 	}
 	
 }
@@ -60,18 +67,18 @@ body {
 @keyframes animationTwo {
 
 	0%{
-		top: 43%;
-		left: 15%;
+		padding-top: 22%;
+		padding-right: 63%
 	}
 	
 	50%{
-		top: 41%;
-		left: 16%;
+		padding-top: 21%;
+		padding-right: 61%;
 	}
 
 	100%{
-		top: 43%;
-		left: 15%;
+		padding-top: 22%;
+		padding-right: 63%;
 	}
 	
 }
