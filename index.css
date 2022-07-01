@@ -11,13 +11,13 @@ body {
 .top_section {
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 5%;
+	padding-top: 2%;
 	justify-content: center;
 }
 
 .logo {
 	margin: 5px;
-	top: 10%;
+	padding-top: 5%;
 	position: relative;
 }
 
@@ -33,7 +33,7 @@ body {
 
 .sparkles {
 	animation-name: animationOne;
-	animation-duration: 1s;
+	animation-duration: 1.5s;
   	animation-iteration-count: infinite;
   	position: absolute;
 }
@@ -48,18 +48,18 @@ body {
 @keyframes animationOne {
 
 	0%{
-		padding-top: 2%;	
-		padding-left: 77%;
+		padding-top: 3%;	
+		padding-left: 78%;
 	}
 	
 	50%{
-		padding-top: 3%;
-		padding-left: 78%;
+		padding-top: 2%;
+		padding-left: 77%;
 	}
 
 	100%{
-		padding-top: 2%;	
-		padding-left: 77%;
+		padding-top: 3%;	
+		padding-left: 78%;
 	}
 	
 }
@@ -214,7 +214,7 @@ input {
 	right: 0;
 	bottom: 2%;
 	text-align: center;
-	width: fit-content
+	width: fit-content;
 }
 
 @media screen and (max-width: 480px) {
