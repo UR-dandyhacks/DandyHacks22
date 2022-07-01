@@ -14,6 +14,16 @@ body {
 	justify-content: center;
 }
 
+.logo {
+	padding-left: 22%;
+	padding-right: 22%;
+}
+
+.top_section img {
+   	max-width: 100%;
+	height: 100%;
+}
+
 .sparkles {
 	animation-name: animationOne;
 	animation-duration: 1s;
