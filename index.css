@@ -1,11 +1,44 @@
 body {
-	background-image: url(img/imperfections.png);
+	/* background-image: url(img/imperfections.png);
 	background-repeat: repeat;
 	background-size: 50%;
 	background-position-x: 5%;
 	background-position-y: 0%;
-	background-color: #E2F5ED;
+	background-color: #E2F5ED; */
 	margin: auto;
+}
+
+.grainy-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.grainy-overlay .grainy1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  background: url(img/grainy1.png);
+  mix-blend-mode: soft-light;
+  opacity: 0.2;
+}
+
+.grainy-overlay .imperfections {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  background: url(img/imperfections.png);
+  mix-blend-mode: screen;
+  opacity: 0.5;
+  transform: rotate(-180deg);
 }
 
 .top_section {
