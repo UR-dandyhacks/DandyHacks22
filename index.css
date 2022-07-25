@@ -197,20 +197,10 @@ body {
 	border: 5px;
 }
 
-.actions button:hover {
-	background-color: #94CAB3;
-}
-
-.actions button:active {
-	background-color: #62726a;
-}
-
 .actions button {
-	background-color: #BDE3D3;
+	color: #1D4217;
 	text-align: center;
-	border-radius: 5px;
 }
-
 
 .interest button {
 	font-size: medium;
@@ -222,7 +212,12 @@ body {
 	float: right;
 }
 
+.prev-year-button:hover {
+	background-color: #94CAB3;
+}
+
 .prev-year-button {
+	background-color: #BDE3D3;
 	padding: 1.15em 3.25em;
 	margin: 10px
 }
@@ -233,7 +228,12 @@ body {
 	text-align: end;
 }
 
+.signup-button:hover {
+	background-color: #80AB98;
+}
+
 .signup-button {
+	background-color: #A7D3C0;
 	padding: 1.15em 5.25em;
 	font-weight: bold;
 }
