@@ -127,6 +127,12 @@ body {
   100% { opacity: 0; }
 }
 
+@media only screen and (max-width: 768px) {
+	.sparkles, .sparkles2 {
+		display: none;
+	}
+}
+
 /*
 @keyframes animationOne {
 
