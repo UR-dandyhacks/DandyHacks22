@@ -1,11 +1,20 @@
 body {
-	/* background-image: url(img/imperfections.png);
+	/*
+	background-image: url(img/imperfections.png);
 	background-repeat: repeat;
 	background-size: 50%;
 	background-position-x: 5%;
-	background-position-y: 0%; */
+	background-position-y: 0%;
+	*/
 	background-color: #E2F5ED;
 	margin: auto;
+
+	width: 85%;
+	max-width: 1000px;
+	margin: auto;
+
+	display: grid;
+	}
 }
 
 .grainy-overlay {
@@ -55,7 +64,7 @@ body {
 	z-index: 2;
 }
 
-.logo_container img{
+.logo_container img {
    	max-width: 100%;
    	width: 100%;
 	height: 100%;
@@ -65,7 +74,7 @@ body {
 	margin: auto;
 }
 
-.sparkles img, .sparkles2 img{
+.sparkles img, .sparkles2 img {
 	max-width: 100%;
 	max-height: 100%;
    	width: auto;
@@ -73,22 +82,52 @@ body {
 }
 
 .sparkles {
+	/*
 	animation-name: animationOne;
 	animation-duration: 1.5s;
   	animation-iteration-count: infinite;
+  	*/
+
   	position: absolute;
-  	margin-right: 2px;
+	width: 179.19px;
+	height: 120px;
+	right: 2%;
+	top: 15%;
+	
   	z-index: 1;
 }
 
 .sparkles2 {
+	/*
 	animation-name: animationTwo;
 	animation-duration: 1.5s;
   	animation-iteration-count: infinite;
+  	*/
+
   	position: absolute;
+	width: 182.9px;
+	height: 150px;
+	left: 10%;
+	top: 55%;
+
   	z-index: 1;
 }
 
+.sparkles, .sparkles2 {
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 0.6s;
+  animation-direction: alternate;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/*
 @keyframes animationOne {
 
 	0%{
@@ -126,7 +165,7 @@ body {
 	}
 	
 }
-
+*/
 /* placeholder font change, TODO remove this later */
 * {
 	font-family: 'Montserrat Alternates', sans-serif;
@@ -250,16 +289,17 @@ input {
 	font-size: large;
 }
 
-.end {
-	color: #7B988C;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	bottom: 2%;
-	text-align: center;
-	width: fit-content;
+.website_text {
+    position: absolute;
+    width: 100%;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.about, .FAQs, .sponsor {
+	padding: 10px;
 }
 
 @media screen and (max-width: 480px) {
@@ -280,4 +320,23 @@ input {
   .actions .mlh {
     text-align: center;
   }
+}
+
+footer {
+	position: fixed;
+    bottom: 18px;
+    width: 85%;
+    height: 75px;
+    padding: 10px;
+}
+
+.end {
+	color: #7B988C;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 0%;
+	text-align: center;
 }
