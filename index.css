@@ -310,12 +310,12 @@ h2 {
     margin: 10px;
 }
 
-.about, .FAQs, .sponsor {
+.about, .FAQs, .sponsor, .tracks {
 	background-color: #D2ECE1;
 	padding-bottom: 10px;
 }
 
-.about p, .FAQs p, .sponsor p {
+.about p, .FAQs p, .sponsor p, .tracks p {
 	padding: 15px;
 }
 
