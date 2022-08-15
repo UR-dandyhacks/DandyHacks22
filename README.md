@@ -1,2 +1,2 @@
 # DandyHacks22
-[dandyhacks.net](dandyhacks.net)
+[dandyhacks.net](https://dandyhacks.net/)
