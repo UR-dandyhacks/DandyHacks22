@@ -193,8 +193,12 @@ body {
   height: auto;
 }
 
+.actions button {
+	cursor: pointer;
+}
+
 .actions .interest {
-  display: flex;
+	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -211,6 +215,7 @@ body {
 .actions ul.icons li {
 	display: inline-block;
 	padding: 0 0 0 0.75em;
+	cursor: pointer;
 }
 
 .actions ul.icons li:first-child {
