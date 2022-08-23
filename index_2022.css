@@ -1,1 +1,5 @@
-
+body {
+	background-color: #D2ECE1;
+	background-image: url("img/sky-section.svg");
+	background-repeat: no-repeat;
+}
