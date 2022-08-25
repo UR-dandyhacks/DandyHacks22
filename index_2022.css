@@ -3,3 +3,45 @@ body {
 	background-image: url("img/sky-section.svg");
 	background-repeat: no-repeat;
 }
+
+.hill_1 {
+  position: absolute;
+  top: 450px;
+  left: 0px;
+  z-index: 1;
+}
+
+.hill_2 {
+  position: absolute;
+  top: 760px;
+  left: 0px;
+  z-index: 2;
+}
+
+.hill_3 {
+  position: absolute;
+  top: 1550px;
+  left: 0px;
+  z-index: 3;
+}
+
+.hill_4 {
+  position: absolute;
+  top: 2430px;
+  left: 0px;
+  z-index: 4;
+}
+
+.hill_5 {
+  position: absolute;
+  top: 3300px;
+  left: 0px;
+  z-index: 5;
+}
+
+.hill_6 {
+  position: absolute;
+  top: 4280px;
+  left: 0px;
+  z-index: 6;
+}
