@@ -4,6 +4,11 @@ body {
 	background-repeat: no-repeat;
 }
 
+h2 {
+	color: #152F11;
+	font-size: 32px;
+}
+
 .hill_1 {
   	position: absolute;
   	top: 450px;
@@ -11,6 +16,7 @@ body {
  	z-index: 1;
 }
 
+/* About section */
 .hill_2 {
 	position: absolute;
   	top: 760px;
@@ -18,12 +24,54 @@ body {
   	z-index: 2;
 }
 
+/*
+.about_us {
+	position: absolute;
+	top: 950px;
+	right: 180px;
+	z-index: 7;
+}
+
+.about_section h2 {
+	position: absolute;
+	top: 990px;
+	right: 380px;
+	z-index: 8;
+}
+
+.about_text {
+	width: 510px;
+	height: 100px;
+	position: absolute;
+	top: 1050px;
+	right: 180px;
+	z-index: 8;
+}
+*/
+
+/* Track section */
 .hill_3 {
   	position: absolute;
   	top: 1550px;
   	left: 0px;
   	z-index: 3;
 }
+
+/*
+.tracks {
+	position: absolute;
+	top: 1550px;
+	left: 0px;
+	z-index: 7;
+}
+
+.track_section h2 {
+	position: absolute;
+	top: 1623px;
+	left: 445px;
+	z-index: 8;
+}
+*/
 
 .hill_4 {
   	position: absolute;
