@@ -100,3 +100,87 @@ h2 {
 	left: 0px;
 	z-index: 6;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background: #d2ece1;
+  width: 100%;
+  padding: 36px;
+  z-index: 999;
+}
+
+footer .email {
+  display: inline-box;
+  font-family: 'Gill Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+
+  color: #254E1E;
+}
+
+footer .left, footer .right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+footer .social ul.icons {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+footer .social ul.icons #email:hover {
+  content: url('img/Email_hover.png');
+}
+
+footer .social ul.icons #instagram:hover {
+  content: url('img/Instagram_hover.png');
+}
+
+footer .social ul.icons #facebook:hover {
+  content: url('img/Facebook_hover.png');
+}
+
+footer .social ul.icons #twitter:hover {
+  content: url('img/Twitter_hover.png');
+}
+
+footer .right {
+  text-align: right;
+}
+
+footer .mlh a {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.0323px;
+  line-height: 160%;
+
+  /* or 27px */
+  text-align: right;
+  text-decoration-line: underline;
+
+  color: #7B988C;
+}
+
+footer .copyright {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.0323px;
+  line-height: 160%;
+  text-align: right;
+  color: #558571;
+}
