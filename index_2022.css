@@ -101,6 +101,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  bottom: 0px;
   background: #d2ece1;
   width: 100%;
   padding: 36px;
