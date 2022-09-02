@@ -10,6 +10,10 @@ h2 {
   font-size: 32px;
 }
 
+h3, h4, p {
+  color: #152F11;
+}
+
 .hill_1 {
   position: relative;
   top: 450px;
@@ -25,30 +29,28 @@ h2 {
   z-index: 1;
 }
 
-/*
 .about_us {
-	position: absolute;
-	top: 950px;
-	right: 180px;
-	z-index: 7;
+  position: absolute;
+  top: 950px;
+  right: 0px;
+  z-index: 7;
 }
 
 .about_section h2 {
-	position: absolute;
-	top: 990px;
-	right: 380px;
-	z-index: 8;
+  position: absolute;
+  top: 995px;
+  right: 280px;
+  z-index: 8;
 }
 
 .about_text {
-	width: 510px;
-	height: 100px;
-	position: absolute;
-	top: 1050px;
-	right: 180px;
-	z-index: 8;
+  position: absolute;
+  width: 570px;
+  height: 200px;
+  top: 1130px;
+  right: 35px;
+  z-index: 8;
 }
-*/
 
 /* Track section */
 .hill_3 {
@@ -58,22 +60,56 @@ h2 {
   z-index: 2;
 }
 
-/*
 .tracks {
-	position: absolute;
-	top: 1550px;
-	left: 0px;
-	z-index: 7;
+  position: absolute;
+  top: 1550px;
+  left: 0px;
+  z-index: 7;
 }
 
 .track_section h2 {
-	position: absolute;
-	top: 1623px;
-	left: 445px;
-	z-index: 8;
+  position: absolute;
+  top: 1623px;
+  left: 470px;
+  z-index: 8;
 }
-*/
 
+.productive {
+  position: absolute;
+  top: 1730px;
+  left: 490px;
+  z-index: 8;
+}
+
+.video_game {
+  position: absolute;
+  top: 1825px;
+  left: 490px;
+  z-index: 8;
+}
+
+.community {
+  position: absolute;
+  top: 1920px;
+  left: 490px;
+  z-index: 8;
+}
+
+.side_challenges h2 {
+  position: absolute;
+  top: 2000px;
+  left: 330px;
+  z-index: 8;
+}
+
+.tracks_vector {
+  position: absolute;
+  top: 1650px;
+  right: 100px;
+  z-index: 8;	
+}
+
+/* Schedule section */
 .hill_4 {
   position: absolute;
   top: 2430px;
@@ -81,6 +117,14 @@ h2 {
   z-index: 3;
 }
 
+.schedule {
+  position: absolute;
+  top: 2550px;
+  right: 20px;
+  z-index: 8;
+}
+
+/* FAQ section */
 .hill_5 {
   position: absolute;
   top: 3300px;
@@ -88,6 +132,32 @@ h2 {
   z-index: 4;
 }
 
+.FAQ_text {
+  position: absolute;
+  width: 1100px;
+  top: 3400px;
+  left: 20px;
+  z-index: 8;	
+}
+
+.FAQ_text h4 {
+  width: max-content;
+  background-color: #D8C5A7;
+}
+
+a {
+  color: #5F9854;
+}
+
+a:visited {
+  color: #254E1E;
+}
+
+a:hover {
+  color: #FFD465;
+}
+
+/* Sponsoring section */
 .hill_6 {
   position: absolute;
   top: 4180px;
@@ -95,11 +165,70 @@ h2 {
   z-index: 5;
 }
 
+.sponsoring {
+  position: absolute;
+  top: 4300px;
+  right: 20px;
+  z-index: 7;
+}
+
+.sponsor_title {
+  position: absolute;
+  top: 4370px;
+  right: 400px;
+  z-index: 8;
+}
+
+.sponsor_1 {
+  position: absolute;
+  top: 4510px;
+  right: 400px;
+  z-index: 8;
+}
+
+.sponsor_text {
+  position: absolute;
+  width: 600px;
+  top: 4555px;
+  right: 175px;
+  z-index: 8;
+}
+
+.sponsor_2 {
+  position: absolute;
+  top: 4760px;
+  right: 430px;
+  z-index: 8;
+}
+
+.why_sponsor_text {
+  position: absolute;
+  width: 600px;
+  top: 4800px;
+  right: 175px;
+  z-index: 8;
+}
+
+/* Highlights section */
 .hill_7 {
   position: absolute;
   top: 5190px;
   left: 0px;
   z-index: 6;
+}
+
+.sns_highlights {
+  position: absolute;
+  top: 5250px;
+  left: 50px;
+  z-index: 7;
+}
+
+.coming_soon {
+  position: absolute;
+  top: 5550px;
+  left: 500px;
+  z-index: 7;
 }
 
 footer {
