@@ -145,15 +145,15 @@ h3, h4, p {
   background-color: #D8C5A7;
 }
 
-a {
+.FAQ_section a {
   color: #5F9854;
 }
 
-a:visited {
+.FAQ_section a:visited {
   color: #254E1E;
 }
 
-a:hover {
+.FAQ_section a:hover {
   color: #FFD465;
 }
 
