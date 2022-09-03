@@ -1,3 +1,8 @@
+@font-face {
+  font-family: AT Nezue;
+  src: url(./font/NEZUE\ ExtraBold.otf);
+}
+
 body {
 	padding: 0;
   margin: 0;
@@ -42,26 +47,45 @@ h3, h4, p {
 	color: #fff;
 }
 
-.nav-links a {
- text-decoration: none;
-}
-
 .nav-links label {
 	margin-right: 40px;
 	color: #254E1E;
 }
 
+.nav-links li {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-links a {
+	text-decoration: none;
+
 	color: #254E1E;
-	font-family: 'Montserrat Alternates';
+	font-family: 'AT Nezue';
+	font-size: 20px;
 }
 
 /* LOGO */
 .logo {
-	color: #254E1E;
-	font-family: 'Montserrat Alternates';
+	padding-left: 36px;
+
 	font-weight: bold;
 	font-size: 23px;
+	font-family: 'AT Nezue';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 27px;
+	display: flex;
+
+	color: #9FC299;
+	line-break: none;
+	text-shadow: -1px 2px 0 #254E1E;
+	-webkit-text-stroke: 1px #254E1E;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
 }
 
 /* NAVBAR MENU */
@@ -74,11 +98,20 @@ h3, h4, p {
 
 .menu img {
 	width: 26px;
+	display: relative;
+	bottom: 3px;
+  -webkit-filter: drop-shadow(-1px 1px 0 #254E1E);
+  filter: drop-shadow(-1px 1px 0 #254E1E);
 }
 
 .menu li {
 	list-style: none;
 	padding: 5px 14px;
+}
+
+.menu-flower {
+	position: relative;
+	right: -40px;
 }
 
 /* DROPDOWN MENU */
@@ -97,20 +130,29 @@ input[type=checkbox]{
 	user-select: none;
 }
 /* APPLYING MEDIA QUERIES */
-@media (max-width: 925px) {
+@media (max-width: 1024px) {
 	.menu { 
 		display:none;
 		position: absolute;
-		background-color:#9fc4b4;
+		background: linear-gradient(to bottom, #E9F7F1, #9fc4b4);
 		right: 0;
 		left: 0;
 		top: 59px;
 		text-align: center;
 		padding: 16px 0;
+		border-top: 1px solid #9fc4b4;
+	}
+
+	.logo {
+		padding-left: 0;
 	}
 
 	.menu li + li {
 		margin-top: 12px;
+	}
+
+	.menu-flower {
+		right: auto;
 	}
 	input[type=checkbox]:checked ~ .menu{
 		display: block;
