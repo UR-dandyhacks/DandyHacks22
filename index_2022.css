@@ -183,17 +183,8 @@ input[type=checkbox]{
 }
 
 .all-hills {
+  width: 100%;
   display: contents;
-}
-
-.hill_content{
-  width: 70%;
-}
-
-.hill_content.right{
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .hill {
@@ -204,12 +195,25 @@ input[type=checkbox]{
   width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.hill_content{
+  width: 70%;
+  max-width: 1200px;
+}
+
+.hill_content.right{
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*sign up hill*/
 
 .hill-1 {
   background-image: url('../DandyHacks22/img/hill-1/bg.svg'); 
+  /* margin-bottom: -500px; */
 }
 
 .buttons-pole {
@@ -240,6 +244,7 @@ input[type=checkbox]{
 
 .hill-2 {
   background-image: url('../DandyHacks22/img/hill-2/bg.svg'); 
+  margin-top: -500px;
 }
 
 
