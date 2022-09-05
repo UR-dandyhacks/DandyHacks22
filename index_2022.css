@@ -212,7 +212,7 @@ input[type=checkbox]{
 /*sign up hill*/
 
 .hill-1 {
-  background-image: url('../DandyHacks22/img/hill-1/bg.svg'); 
+  background-image: url('../DandyHacks22/img/hill-1.svg'); 
   /* margin-bottom: -500px; */
 }
 
@@ -243,7 +243,7 @@ input[type=checkbox]{
 }
 
 .hill-2 {
-  background-image: url('../DandyHacks22/img/hill-2/bg.svg'); 
+  background-image: url('../DandyHacks22/img/hill-2.svg'); 
   margin-top: -500px;
 }
 
