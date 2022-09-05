@@ -4,8 +4,8 @@
 }
 
 body {
-	padding: 0;
-  margin: 0;
+	padding: 0 !important;;
+  margin: 0 !important;;
   background-color: #D2ECE1;
   background-image: url("img/sky-section.svg");
   background-repeat: no-repeat;
@@ -24,18 +24,12 @@ h3, h4, p {
   color: #152F11;
 }
 
-.hill_1 {
-  position: relative;
-  top: 450px;
-  left: 0px;
-  z-index: 0;
-}
-
 /* Header section */
 .navbar {
 	position: fixed;
 	height: 59px;
 	width: 100%;
+  top:0;
 
 	z-index: 9999;
 	display: flex;
@@ -80,13 +74,21 @@ h3, h4, p {
 
 	color: #9FC299;
 	line-break: none;
-	text-shadow: -1px 2px 0 #254E1E;
-	-webkit-text-stroke: 1px #254E1E;
+  text-shadow:
+    -1px -1px 0 #254E1E,  
+    -1.5px 2.5px 0 #254E1E,
+    -1px  1px 0 #254E1E,
+     1px  1px 0 #254E1E;
+  
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
+
+  /* -webkit-text-stroke: 1px #254E1E;
+  paint-order: stroke fill; */
 }
+
 
 /* NAVBAR MENU */
 .menu {
@@ -161,6 +163,34 @@ input[type=checkbox]{
 	.hamburger {
 		display: block;
 	}
+}
+
+
+/* Page content container */
+.container{
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  width: 70%;
+  display: flex;
+}
+
+.hills {
+  display: contents;
+}
+
+.hill_1 {
+  background-image: url('../DandyHacks22/img/hill-1.svg'); 
+  background-size: 100% 100%;
+  margin: 0 -50%;
+  padding: 0 -50%;
+  height: 800px;
+  width: 100%;
 }
 
 
@@ -379,7 +409,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  position: fixed;
   bottom: 0px;
   background: #d2ece1;
   width: 100%;
