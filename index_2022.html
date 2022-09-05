@@ -14,6 +14,40 @@
   <!-- Mobile Design/Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 14, 2022 0:0:0").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("days").innerHTML = days;
+
+      document.getElementById("hours").innerHTML = hours;
+
+      document.getElementById("mins").innerHTML = minutes;
+
+      document.getElementById("secs").innerHTML = seconds;
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        // document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 </head>
 
 <nav class="navbar">
@@ -35,18 +69,36 @@
 </nav>
 
 <body>
+
   <!-- MLH Trust Badge -->
   <a id="mlh-trust-badge" style="display: block; max-width: 100px; min-width: 60px; position: fixed; right: 50px; top: 59px; width:10%; z-index: 10000" href="https://mlh.io/seasons/2023/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%">
   </a>
 
   <div class="container">
+
     <div class="hills">
 
-      <div>
+      <div class="top-part">
+        <img src="img/top_section.png" class="top_picture">
+        <img src="img/Frame_15.png" class = "timer">
         <img src="img/hill-1.svg" class="hill_1">
+        <span>
+          <p id="days" style="position: absolute; left: 414px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+          <p id="hours" style="position: absolute; left: 476px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+          <p id="mins" style="position: absolute; left: 538px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+          <p id="secs" style="position: absolute; left: 600px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+        </span>
+
+        <div class="branch">
+          <img src="img/Buttons.png" id="button-branch">
+          <a href="https://google.com"><img src="img/register.png" id="register-button"></a>
+          <a href="https://discord.com"><img src="img/join-discord.png" id="join-button"></a>
+        </div>
       </div>
 
+
       <div id="about_section" class="about_section">
+
         <img src="img/hill-2.svg"class="hill_2">
         <img src="img/about_us.svg" class="about_us">
         <H2>About Us</H2>
