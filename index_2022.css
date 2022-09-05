@@ -142,7 +142,7 @@ input[type=checkbox]{
 	.menu { 
 		display:none;
 		position: absolute;
-		background: linear-gradient(to bottom, #E9F7F1, #9fc4b4);
+		background: rgba(233, 246, 241, 0.9);;
 		right: 0;
 		left: 0;
 		top: 59px;
