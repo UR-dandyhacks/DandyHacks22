@@ -224,9 +224,6 @@ input[type=checkbox]{
   margin-top: -8%;
 }
 
-.pole{
-}
-
 .hill-1 .buttons{
   display: inline-flex;
   flex-direction: column;
@@ -239,21 +236,34 @@ input[type=checkbox]{
   margin-bottom: -5%;
 }
 
-.discord{
-}
-
+/* About section */
 .hill-2 {
   background-image: url('../DandyHacks22/img/hill-2.svg'); 
   margin-top: -500px;
 }
 
+.wood-with-text{
+  width: 100%;
+  padding:10%;
+  position: relative;
+}
 
-/* About section */
-.hill_2 {
+.wood-with-text img{
+  width: 100%;
+  position: relative;
+}
+
+.wood-with-text .text{
   position: absolute;
-  top: 760px;
-  left: 0px;
-  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.long-text-wood{
+  background-image: url('../DandyHacks22/img/long-text-wood.svg'); 
+  background-size: 200px 400px;
+  background-repeat: no-repeat;
 }
 
 .about_us {
