@@ -202,12 +202,12 @@ input[type=checkbox]{
   width: 100%;
 }
 
-.hill_content{
+.hill-content{
   width: 70%;
   max-width: 1200px;
 }
 
-.hill_content.right{
+.hill-content.right{
   width: 70%;
   display: flex;
   justify-content: flex-end;
@@ -249,17 +249,20 @@ input[type=checkbox]{
   /* justify-content: flex-end; */
 }
 
-.hill-2 .sign-div {
-  max-width: 650px;
+.hill-2 .hill-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
+.hill-2 .sign-div{
+  max-width: 600px;
+}
 
 /* dynamic wood sign */
 .sign-div {
-  /* width: 100%;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  margin-right: -15%; */
 }
 
 .sticks {
@@ -271,7 +274,7 @@ input[type=checkbox]{
 
 /*all content in sign, including title and details*/
 .sign-div .content{
-  /* max-width: 650px; */
+  /* width: 800px; */
   z-index: 20;
   margin: 0 -15%;
   margin-top: 2%;
