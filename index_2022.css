@@ -249,84 +249,49 @@ input[type=checkbox]{
   /* justify-content: flex-end; */
 }
 
+.hill-2 .sign-div {
+  max-width: 650px;
+}
+
 
 /* dynamic wood sign */
 .sign-div {
-  width: 100%;
-  height: 400px;
+  /* width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -15%; */
 }
 
 .sticks {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   height: 100%;
-}
-
-.sign-div .left-stick{
-  /* margin-right: -10%; */
-}
-
-.sign-div .right-stick{
-  /* margin-left: -10%; */
+  justify-content: center;
 }
 
 /*all content in sign, including title and details*/
 .sign-div .content{
-  width: 800px;
+  /* max-width: 650px; */
   z-index: 20;
-  margin: 0 -10%;
+  margin: 0 -15%;
+  margin-top: 2%;
 }
 
-/* css to place text in images of title and detail wooden boards*/
-.sign-div .title, .sign-div .details{
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.sign-div .title img, .sign-div .details img{
-  width: 100%;
-  position: relative;
+.sign-div .title {
+  background-image: url('../DandyHacks22/img/title-wood.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 3% 0;
   text-align: center;
 }
 
-/*title board*/
-.sign-div .title .text{
-  position: absolute;
-  top: 0;
-  width:100%;    
-  height:100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sign-div .title h2{
-  margin:0;
-  margin-top: -12px;
-}
-
-/*details board*/
 .sign-div .details{
-  /* width: 90%; */
-}
-
-.sign-div .details .text{
   background-image: url('../DandyHacks22/img/details-wood.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 50px;
+  padding: 10% 7%;
+  margin: -5% 0;
 }
-
-.sign-div .details img{
-
-}
-
 
 
 
