@@ -191,7 +191,6 @@ input[type=checkbox]{
   background-size: 100% 100%;
   margin: 0 -50%;
   padding: 0 -50%;
-  height: 800px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -213,6 +212,7 @@ input[type=checkbox]{
 
 .hill-1 {
   background-image: url('../DandyHacks22/img/hill-1.svg'); 
+  height: 800px;
   /* margin-bottom: -500px; */
 }
 
@@ -240,54 +240,66 @@ input[type=checkbox]{
 .hill-2 {
   background-image: url('../DandyHacks22/img/hill-2.svg'); 
   margin-top: -500px;
+  height: 1100px;
+  /* justify-content: flex-end; */
 }
 
-.wood-with-text{
+
+/* dynamic wood sign */
+.sign-div {
   width: 100%;
-  padding:10%;
-  position: relative;
+  height: 400px;
 }
 
-.wood-with-text img{
+.sticks {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  height: 100%;
+}
+
+.sign-div .left-stick{
+  /* margin-right: -10%; */
+}
+
+.sign-div .right-stick{
+  /* margin-left: -10%; */
+}
+
+.sign-div .content{
+  width: 800px;
+  z-index: 20;
+  margin: 0 -10%;
+}
+
+.sign-div .title{
+  width: 100%;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sign-div .title img{
   width: 100%;
   position: relative;
+  text-align: center;
 }
 
-.wood-with-text .text{
+.sign-div .title h2{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  margin:0;
+  width:100%;    
+  height:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.long-text-wood{
-  background-image: url('../DandyHacks22/img/long-text-wood.svg'); 
-  background-size: 200px 400px;
-  background-repeat: no-repeat;
-}
-
-.about_us {
-  position: absolute;
-  top: 950px;
-  right: 0px;
-  z-index: 7;
-}
-
-.about_section h2 {
-  position: absolute;
-  top: 995px;
-  right: 280px;
-  z-index: 8;
-}
-
-.about_text {
-  position: absolute;
-  width: 570px;
-  height: 200px;
-  top: 1130px;
-  right: 35px;
-  z-index: 8;
-}
 
 /* Track section */
 .hill_3 {
