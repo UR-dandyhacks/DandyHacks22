@@ -62,6 +62,7 @@ h3, h4, p {
 /* LOGO */
 .logo {
 	padding-left: 36px;
+  padding-top: 3px;
 
 	font-weight: bold;
 	font-size: 23px;
@@ -83,7 +84,6 @@ h3, h4, p {
 
 .stroke{
   -webkit-text-stroke: 3px #254E1E;
-  position: absolute;
 }
 
 .no-stroke{
@@ -179,19 +179,67 @@ input[type=checkbox]{
 .header{
   width: 70%;
   display: flex;
+  margin-bottom: 50px;
 }
 
-.hills {
+.all-hills {
   display: contents;
 }
 
-.hill_1 {
-  background-image: url('../DandyHacks22/img/hill-1.svg'); 
+.hill_content{
+  width: 70%;
+}
+
+.hill_content.right{
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hill {
   background-size: 100% 100%;
   margin: 0 -50%;
   padding: 0 -50%;
   height: 800px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*sign up hill*/
+
+.hill-1 {
+  background-image: url('../DandyHacks22/img/hill-1/bg.svg'); 
+}
+
+.buttons-pole {
+  display: flex;
+  position: relative;
+  height: 40%;
+  margin-right: 15%;
+  margin-top: -8%;
+}
+
+.pole{
+}
+
+.hill-1 .buttons{
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  right: -70%;
+}
+
+.register{
+  margin-top: 5%;
+  margin-bottom: -5%;
+}
+
+.discord{
+}
+
+.hill-2 {
+  background-image: url('../DandyHacks22/img/hill-2/bg.svg'); 
 }
 
 
