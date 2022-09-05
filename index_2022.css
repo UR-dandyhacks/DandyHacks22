@@ -71,22 +71,23 @@ h3, h4, p {
 	font-size: 28px;
 	line-height: 27px;
 	display: flex;
-
 	color: #9FC299;
 	line-break: none;
-  text-shadow:
-    -1px -1px 0 #254E1E,  
-    -1.5px 2.5px 0 #254E1E,
-    -1px  1px 0 #254E1E,
-     1px  1px 0 #254E1E;
+  text-shadow: -1.5px 2px 0px #254E1E;
   
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
+}
 
-  /* -webkit-text-stroke: 1px #254E1E;
-  paint-order: stroke fill; */
+.stroke{
+  -webkit-text-stroke: 3px #254E1E;
+  position: absolute;
+}
+
+.no-stroke{
+  position: absolute;
 }
 
 
