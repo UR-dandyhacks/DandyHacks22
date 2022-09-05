@@ -31,6 +31,42 @@ h3, h4, p {
   z-index: 0;
 }
 
+.top_picture {
+  padding-top: 70px;
+  padding-left: 30px;
+  position: absolute;
+  z-index: 0;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.timer {
+  position: absolute;
+  z-index: 0;
+  padding-top: 320px;
+  padding-left: 400px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+#button-branch{
+  position: absolute;
+  right: 330px;
+  top: 230px;
+}
+
+#register-button{
+  position: absolute;
+  right: 285px;
+  top: 300px;
+}
+
+#join-button{
+  position: absolute;
+  right: 285px;
+  top: 410px;
+}
+
 /* Header section */
 .navbar {
 	position: fixed;
