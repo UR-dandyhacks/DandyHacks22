@@ -214,8 +214,8 @@ input[type=checkbox]{
   justify-content: flex-end;
 }
 
-/* dynamic wood sign - for long text, with one platform */
-.sign-div {
+/******************CSS for all the wooden planks ****************/
+.wooden-sign {
   width: 100%;
   display: flex;
 }
@@ -227,28 +227,41 @@ input[type=checkbox]{
   justify-content: center;
 }
 
-/******************CSS for all the wooden planks ****************/
+
 /*all content in sign, including title and details*/
-.sign-div .content{
+.wooden-sign .content{
   z-index: 20;
   margin: 0 -15%;
   margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sign-div .title {
+.wooden-sign .title {
   background-image: url('../DandyHacks22/img/title-wood.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 3% 0;
   text-align: center;
+  width: 100%;
 }
 
-.sign-div .details{
+.wooden-sign .details{
   background-image: url('../DandyHacks22/img/details-wood.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 10% 7%;
   margin: -5% 0;
+}
+
+.wooden-sign .list .details{
+  background-image: url('../DandyHacks22/img/list-sign.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 18% 7% 10% 7%;
+  margin: -18% -7% -10% -7%;
 }
 
 
@@ -294,7 +307,7 @@ input[type=checkbox]{
   justify-content: flex-end;
 }
 
-#hill-about .sign-div{
+#hill-about .wooden-sign{
   max-width: 600px;
 }
 
@@ -304,19 +317,25 @@ input[type=checkbox]{
   background-image: url('../DandyHacks22/img/hill-tracks.svg'); 
   margin-top: -500px;
   height: 1100px;
-  /* justify-content: flex-end; */
 }
 
-#hill-about .hill-content {
-  display: flex;
+#hill-tracks .hill-content {
+  /* display: flex;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-end; */
 }
 
-#hill-about .sign-div{
+#hill-tracks .wooden-sign{
   max-width: 600px;
 }
 
+#hill-tracks .content{
+  width: 500px;
+}
+
+#tracks-list{
+  width: 70%;
+}
 /****************** Schedule section ***********/
 .hill_4 {
   position: absolute;
