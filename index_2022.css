@@ -202,6 +202,7 @@ input[type=checkbox]{
   width: 100%;
 }
 
+/* for any content that is on the hill */
 .hill-content{
   width: 70%;
   max-width: 1200px;
@@ -213,53 +214,7 @@ input[type=checkbox]{
   justify-content: flex-end;
 }
 
-/*sign up hill*/
-
-.hill-1 {
-  background-image: url('../DandyHacks22/img/hill-1.svg'); 
-  height: 800px;
-  /* margin-bottom: -500px; */
-}
-
-.buttons-pole {
-  display: flex;
-  position: relative;
-  height: 40%;
-  margin-right: 15%;
-  margin-top: -8%;
-}
-
-.hill-1 .buttons{
-  display: inline-flex;
-  flex-direction: column;
-  position: absolute;
-  right: -70%;
-}
-
-.register{
-  margin-top: 5%;
-  margin-bottom: -5%;
-}
-
-/* About section */
-.hill-2 {
-  background-image: url('../DandyHacks22/img/hill-2.svg'); 
-  margin-top: -500px;
-  height: 1100px;
-  /* justify-content: flex-end; */
-}
-
-.hill-2 .hill-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-
-.hill-2 .sign-div{
-  max-width: 600px;
-}
-
-/* dynamic wood sign */
+/* dynamic wood sign - for long text, with one platform */
 .sign-div {
   width: 100%;
   display: flex;
@@ -272,9 +227,9 @@ input[type=checkbox]{
   justify-content: center;
 }
 
+/******************CSS for all the wooden planks ****************/
 /*all content in sign, including title and details*/
 .sign-div .content{
-  /* width: 800px; */
   z-index: 20;
   margin: 0 -15%;
   margin-top: 2%;
@@ -297,65 +252,72 @@ input[type=checkbox]{
 }
 
 
+/************* Top section ************/
 
-/* Track section */
-.hill_3 {
-  position: absolute;
-  top: 1550px;
-  left: 0px;
-  z-index: 2;
+#hill-top {
+  background-image: url('../DandyHacks22/img/hill-top.svg'); 
+  height: 800px;
+  /* margin-bottom: -500px; */
 }
 
-.tracks {
-  position: absolute;
-  top: 1550px;
-  left: 0px;
-  z-index: 7;
+.buttons-pole {
+  display: flex;
+  position: relative;
+  height: 40%;
+  margin-right: 15%;
+  margin-top: -8%;
 }
 
-.track_section h2 {
+#hill-top .buttons{
+  display: inline-flex;
+  flex-direction: column;
   position: absolute;
-  top: 1623px;
-  left: 470px;
-  z-index: 8;
+  right: -70%;
 }
 
-.productive {
-  position: absolute;
-  top: 1730px;
-  left: 490px;
-  z-index: 8;
+.register{
+  margin-top: 5%;
+  margin-bottom: -5%;
 }
 
-.video_game {
-  position: absolute;
-  top: 1825px;
-  left: 490px;
-  z-index: 8;
+/************* About section ************/
+#hill-about {
+  background-image: url('../DandyHacks22/img/hill-about.svg'); 
+  margin-top: -500px;
+  height: 1100px;
+  /* justify-content: flex-end; */
 }
 
-.community {
-  position: absolute;
-  top: 1920px;
-  left: 490px;
-  z-index: 8;
+#hill-about .hill-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
-.side_challenges h2 {
-  position: absolute;
-  top: 2000px;
-  left: 330px;
-  z-index: 8;
+#hill-about .sign-div{
+  max-width: 600px;
 }
 
-.tracks_vector {
-  position: absolute;
-  top: 1650px;
-  right: 100px;
-  z-index: 8;	
+
+/***************** Track section ******************/
+#hill-tracks {
+  background-image: url('../DandyHacks22/img/hill-tracks.svg'); 
+  margin-top: -500px;
+  height: 1100px;
+  /* justify-content: flex-end; */
 }
 
-/* Schedule section */
+#hill-about .hill-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#hill-about .sign-div{
+  max-width: 600px;
+}
+
+/****************** Schedule section ***********/
 .hill_4 {
   position: absolute;
   top: 2430px;
