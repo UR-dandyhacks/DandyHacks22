@@ -271,15 +271,16 @@ input[type=checkbox]{
   /* margin-left: -10%; */
 }
 
+/*all content in sign, including title and details*/
 .sign-div .content{
   width: 800px;
   z-index: 20;
   margin: 0 -10%;
 }
 
-.sign-div .title{
+/* css to place text in images of title and detail wooden boards*/
+.sign-div .title, .sign-div .details{
   width: 100%;
-  height: 120px;
   position: relative;
   display: inline-block;
   justify-content: center;
@@ -287,16 +288,16 @@ input[type=checkbox]{
 
 }
 
-.sign-div .title img{
+.sign-div .title img, .sign-div .details img{
   width: 100%;
   position: relative;
   text-align: center;
 }
 
-.sign-div .title h2{
+/*title board*/
+.sign-div .title .text{
   position: absolute;
   top: 0;
-  margin:0;
   width:100%;    
   height:100%;
   display: flex;
@@ -304,6 +305,29 @@ input[type=checkbox]{
   flex-direction: column;
   align-items: center;
 }
+
+.sign-div .title h2{
+  margin:0;
+  margin-top: -12px;
+}
+
+/*details board*/
+.sign-div .details{
+  /* width: 90%; */
+}
+
+.sign-div .details .text{
+  background-image: url('../DandyHacks22/img/details-wood.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px;
+}
+
+.sign-div .details img{
+
+}
+
+
 
 
 /* Track section */
