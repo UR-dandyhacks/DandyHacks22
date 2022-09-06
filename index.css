@@ -345,6 +345,14 @@ input[type=checkbox]{
   margin-bottom: -5%;
 }
 
+.register:hover{
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.discord:hover{
+  transform: scale(1.1) rotate(3deg);
+}
+
 /************* About section ************/
 #hill-about {
   background-image: url('img/hill-about.svg'); 
