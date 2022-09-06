@@ -244,7 +244,6 @@ input[type=checkbox]{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150%;
 }
 
 .wooden-sign .title {
@@ -399,53 +398,31 @@ input[type=checkbox]{
   width: 80%;
 }
 
-/* FAQ section */
-.hill_5 {
-  position: absolute;
-  top: 3300px;
-  left: 0px;
-  z-index: 4;
-}
-
-.FAQ_text {
-  position: absolute;
-  width: 1100px;
-  top: 3400px;
-  left: 20px;
-  z-index: 8;	
-}
-
-.FAQ_text h4 {
-  width: max-content;
-  background-color: #D8C5A7;
-}
-
-.FAQ_section a {
-  color: #5F9854;
-}
-
-.FAQ_section a:visited {
-  color: #254E1E;
-}
-
-.FAQ_section a:hover {
-  color: #FFD465;
-}
-
 /* Sponsoring section */
 #hill-sponsoring{
   background-image: url('img/hill-sponsoring.svg'); 
-  margin-top: -500px;
+  margin-top: -800px;
   height: 1700px;
   text-align: center;
 }
 
+#hill-sponsoring .hill-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #hill-sponsoring .wooden-sign{
   width: 60%;
+  justify-content: flex-end;
+  /* position: relative;
+  top: -15%; */
 }
 
 #hill-sponsoring .details{
-
+  text-align: left;
+  padding: 6% 7%;
+  margin-bottom: -2%;
 }
 
 
@@ -463,6 +440,7 @@ footer {
   width: 100%;
   padding: 36px;
   z-index: 999;
+  margin-top: -20%;
 }
 
 footer .email {
