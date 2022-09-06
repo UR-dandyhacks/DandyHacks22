@@ -283,7 +283,8 @@ input[type=checkbox]{
 }
 
 .rope-and-sign .details{
-  background-image: url('img/list-sign.svg');
+  /* background-image: url('img/list-details.svg'); */
+  background-image: url('img/details-wood.svg');
   background-repeat: no-repeat;
   background-size:100% 100%;
   text-align: center;
