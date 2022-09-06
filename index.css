@@ -174,9 +174,12 @@ input[type=checkbox]{
   }
 }
 
+.top_part {
+  margin-top: 100px;
+}
+
 .top_picture {
   width: 45%;
-  padding-top: 10%;
   padding-left: 10%;
 }
 
@@ -353,6 +356,20 @@ input[type=checkbox]{
   transform: scale(1.1) rotate(3deg);
 }
 
+@media only screen and (max-width: 768px) {
+  .pole {
+    display: none;
+  }
+  .buttons-pole {
+    top: -100px;
+    left: 0px;
+  }
+  #hill-about {
+    background-image: none;
+  } 
+
+}
+
 /************* About section ************/
 #hill-about {
   background-image: url('img/hill-about.svg'); 
@@ -401,7 +418,7 @@ input[type=checkbox]{
 #hill-schedule{
   background-image: url('img/hill-schedule.svg'); 
   margin-top: -500px;
-  height: 1400px;
+  height: 1200px;
   text-align: center;
 }
 
@@ -434,10 +451,11 @@ input[type=checkbox]{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 8%;
 }
 
 #hill-sponsoring .wooden-sign{
-  width: 60%;
+  width: 70%;
   justify-content: flex-end;
   /* position: relative;
   top: -15%; */
