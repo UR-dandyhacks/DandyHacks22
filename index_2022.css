@@ -368,25 +368,35 @@ input[type=checkbox]{
 }
 
 #hill-tracks .details{
-  padding: 5% 7%;
+  padding: 3% 7% 5% 7%;
 }
 
 #tracks-list{
   width: 70%;
 }
 /****************** Schedule section ***********/
-.hill_4 {
-  position: absolute;
-  top: 2430px;
-  left: 0px;
-  z-index: 3;
+#hill-schedule{
+  background-image: url('img/hill-schedule.svg'); 
+  margin-top: -500px;
+  height: 1700px;
+  text-align: center;
 }
 
-.schedule {
-  position: absolute;
-  top: 2550px;
-  right: 20px;
-  z-index: 8;
+#hill-schedule .wooden-sign{
+  justify-content: flex-end;
+  position: relative;
+  top: -15%;
+}
+
+#hill-schedule .hill-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#hill-schedule .details img{
+  width: 80%;
 }
 
 /* FAQ section */
@@ -423,79 +433,26 @@ input[type=checkbox]{
 }
 
 /* Sponsoring section */
-.hill_6 {
-  position: absolute;
-  top: 4180px;
-  left: 0px;
-  z-index: 5;
+#hill-sponsoring{
+  background-image: url('img/hill-sponsoring.svg'); 
+  margin-top: -500px;
+  height: 1700px;
+  text-align: center;
 }
 
-.sponsoring {
-  position: absolute;
-  top: 4300px;
-  right: 20px;
-  z-index: 7;
+#hill-sponsoring .wooden-sign{
+  width: 60%;
 }
 
-.sponsor_title {
-  position: absolute;
-  top: 4370px;
-  right: 400px;
-  z-index: 8;
+#hill-sponsoring .details{
+
 }
 
-.sponsor_1 {
-  position: absolute;
-  top: 4510px;
-  right: 400px;
-  z-index: 8;
-}
-
-.sponsor_text {
-  position: absolute;
-  width: 600px;
-  top: 4555px;
-  right: 175px;
-  z-index: 8;
-}
-
-.sponsor_2 {
-  position: absolute;
-  top: 4760px;
-  right: 430px;
-  z-index: 8;
-}
-
-.why_sponsor_text {
-  position: absolute;
-  width: 600px;
-  top: 4800px;
-  right: 175px;
-  z-index: 8;
-}
 
 /* Highlights section */
-.hill_7 {
-  position: absolute;
-  top: 5190px;
-  left: 0px;
-  z-index: 6;
-}
 
-.sns_highlights {
-  position: absolute;
-  top: 5250px;
-  left: 50px;
-  z-index: 7;
-}
 
-.coming_soon {
-  position: absolute;
-  top: 5550px;
-  left: 500px;
-  z-index: 7;
-}
-
+/*Footer*/
 footer {
   display: flex;
   justify-content: space-between;
