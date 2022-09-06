@@ -239,7 +239,7 @@ input[type=checkbox]{
 }
 
 .wooden-sign .title {
-  background-image: url('../DandyHacks22/img/title-wood.svg');
+  background-image: url('img/title-wood.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 3% 0;
@@ -248,7 +248,7 @@ input[type=checkbox]{
 }
 
 .wooden-sign .details{
-  background-image: url('../DandyHacks22/img/details-wood.svg');
+  background-image: url('img/details-wood.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 10% 7%;
@@ -256,6 +256,7 @@ input[type=checkbox]{
 }
 
 .wooden-sign .list {
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,6 +266,7 @@ input[type=checkbox]{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:100%;
 }
 
 .rope-and-sign .ropes{
@@ -276,8 +278,12 @@ input[type=checkbox]{
   z-index: 20;
 }
 
+.rope-and-sign .ropes img{
+  height: 100%;
+}
+
 .rope-and-sign .details{
-  background-image: url('../DandyHacks22/img/list-sign.svg');
+  background-image: url('img/list-sign.svg');
   background-repeat: no-repeat;
   background-size:100% 100%;
   text-align: center;
@@ -290,7 +296,7 @@ input[type=checkbox]{
 /************* Top section ************/
 
 #hill-top {
-  background-image: url('../DandyHacks22/img/hill-top.svg'); 
+  background-image: url('img/hill-top.svg'); 
   height: 800px;
   /* margin-bottom: -500px; */
 }
@@ -317,7 +323,7 @@ input[type=checkbox]{
 
 /************* About section ************/
 #hill-about {
-  background-image: url('../DandyHacks22/img/hill-about.svg'); 
+  background-image: url('img/hill-about.svg'); 
   margin-top: -500px;
   height: 1100px;
   /* justify-content: flex-end; */
@@ -336,7 +342,7 @@ input[type=checkbox]{
 
 /***************** Track section ******************/
 #hill-tracks {
-  background-image: url('../DandyHacks22/img/hill-tracks.svg'); 
+  background-image: url('img/hill-tracks.svg'); 
   margin-top: -500px;
   height: 1100px;
 }
