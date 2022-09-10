@@ -22,6 +22,9 @@
 - If you're importing an SVG that has a shadow, make sure to export a version WITHOUT any shadows, then apply the shadow to the img or div using class="shadow"
 - Make sure to always use percentages whenever possible instead of haerd coded numbers. This way, things translate easily in phone view.
 
+<br>
+<br>
+
 ## Next steps:
 
 - [ ] Import the cloud SVG, and place 3 seperate images of it in the scene. Place them so they they have negative margins to the left/right of the screen. This way they will always be placed at the edge.
@@ -34,7 +37,7 @@
        b. Description text (as a paragraph)
        c. The ropes. Will be imported as an SVG image. Make sure this is always placed at the top center of the div.
 
-- [x] Make the signs with ropes collapsiable (For FAQ)
+- [ ] Make the signs with ropes collapsiable (For FAQ)
   1. If the signs with ropes are designed in a way where it's a div with a background, that incapsulates the text, this should be simply done adjusting the "description" text's visibility, to either be shown or hidden.
   2. Preferably, only one question can be opened at a time. This will prevent the layout from getting messy if the user expands all questions at once.
 - [ ] change the text at the top of the page to match the Figma deisgn.
