@@ -16,7 +16,29 @@
      c. Wooden planks with ropes, used for lists, to apply use class='list'. Ex. Used is the "tracks" section.
      d. You can adjust the width of the entire sign.
 
-Notes:
+###Notes:
 
 - if an SVG isn't scaling propely, based on the content, make sure to add (preserveAspectRatio="none") to the SVG file.
-- If you're importing an SVG that has a shadow, make sure to export a version without any shadows, then apply the shadow using class="shadow"
+- If you're importing an SVG that has a shadow, make sure to export a version WITHOUT any shadows, then apply the shadow to the img or div using class="shadow"
+- Make sure to always use percentages whenever possible instead of haerd coded numbers. This way, things translate easily in phone view.
+
+##Next steps:
+
+- [ ] Import the cloud SVG, and place 3 seperate images of it in the scene. Place them so they they have negative margins to the left/right of the screen. This way they will always be placed at the edge.
+- [ ] Create dropdowns with strings (like in FAQ)
+
+  - To do this, we can do the same process that was used to create the large wooden planks for text. Which is class="wooden-sign".
+    1. Create a div, and add background to the div. The background will be the same wooden plank used in the big one. But this time, it will have less padding around it to make it smaller.
+    2. The div created in step 1 will hold all these remaining elements:
+       a. The title text if any (as an h2, h3, or h4)
+       b. Description text (as a paragraph)
+       c. The ropes. Will be imported as an SVG image. Make sure this is always placed at the top center of the div.
+
+- [ ] change the text at the top of the page to match the Figma deisgn.
+  - Logo and title will both be SVGs.
+  - Date and location will be text, and the location will have a url that takes to a google maps link of the location.
+- [ ] Modify the phone view to be more mobile-friendly.
+  - [ ] Add additional padding to the top and bottom of the planks that have long text.
+  - [ ] Scale up the hills so that they cover up the background.
+  - [ ] Make the stick for the top sign viewable.
+- [ ] Make the height of the wooden-sign sticks adjustable.
