@@ -25,7 +25,7 @@
 ##Next steps:
 
 - [ ] Import the cloud SVG, and place 3 seperate images of it in the scene. Place them so they they have negative margins to the left/right of the screen. This way they will always be placed at the edge.
-- [ ] Create dropdowns with strings (like in FAQ)
+- [ ] Create wooden signs with strings (like in FAQ)
 
   - To do this, we can do the same process that was used to create the large wooden planks for text. Which is class="wooden-sign".
     1. Create a div, and add background to the div. The background will be the same wooden plank used in the big one. But this time, it will have less padding around it to make it smaller.
@@ -34,6 +34,9 @@
        b. Description text (as a paragraph)
        c. The ropes. Will be imported as an SVG image. Make sure this is always placed at the top center of the div.
 
+- [ ] Make the signs with ropes collapsiable (For FAQ)
+  1. If the signs with ropes are designed in a way where it's a div with a background, that incapsulates the text, this should be simply done adjusting the "description" text's visibility, to either be shown or hidden.
+  2. Preferably, only one question can be opened at a time. This will prevent the layout from getting messy if the user expands all questions at once.
 - [ ] change the text at the top of the page to match the Figma deisgn.
   - Logo and title will both be SVGs.
   - Date and location will be text, and the location will have a url that takes to a google maps link of the location.
@@ -42,3 +45,5 @@
   - [ ] Scale up the hills so that they cover up the background.
   - [ ] Make the stick for the top sign viewable.
 - [ ] Make the height of the wooden-sign sticks adjustable.
+- [ ] Add groundboi speech bubble next to tracks. (It can be collapsible in both and phone and desktop view)
+- [ ] Change the icons on the website to the new simplified ones. Impirt them as SVGs, and change the color on hover. (Check the sample for Instagram in the Figma)
