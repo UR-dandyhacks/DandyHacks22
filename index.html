@@ -48,16 +48,30 @@
         // document.getElementById("countdown").innerHTML = "EXPIRED";
       }
     }, 1000);
+
+      // refreshing page automatically when viewport size change  
+      window.onresize = function(event) {
+        document.location.reload(true);
+      }
+
+      var href = window.location.href.split("/")
+      var html_location = href[href.length-1]
+
+      if (window.innerWidth >= 560 && html_location !== "index.html") {
+          window.location = "index.html";
+      }
+
+      if (window.innerWidth < 560 && html_location !== "index_temporary.html") {
+          window.location = "index_temporary.html";
+      }
   </script>
 </head>
 
 <nav class="navbar">
-  <a href="#" style="text-decoration: none;">
-    <div class="logo">
-      <span class="stroke">DandyHacks&nbsp;‘22</span>
-      <span class="no-stroke">DandyHacks&nbsp;‘22</span>
-    </div>
-  </a>
+  <div class="logo">
+    <span class="stroke">DandyHacks&nbsp;‘22</span>
+    <span class="no-stroke">DandyHacks&nbsp;‘22</span>
+  </div>
   
   <ul class="nav-links">
     <input type="checkbox" id="checkbox_toggle" />
