@@ -1,171 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title> DandyHacks'22 </title>
+<head>
+  <meta charset="utf-8">
+  <title>DandyHacks'22</title>
 
-        <link rel="stylesheet" href="index_temporary.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/svg" href="img/favicon.svg">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg" href="img/favicon.svg">
 
-        <!-- Mobile Design/Bootstrap CSS -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-    </head>
+  <!-- Mobile Design/Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <body>
-        <!-- MLH Trust Badge -->
-        <a id="mlh-trust-badge" style="display:block; max-width:100px; min-width:60px; position:fixed; right:50px;top:0;width:10%; z-index:10000" 
-           href="https://mlh.io/seasons/2023/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" 
-           target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" 
-                                alt="Major League Hacking 2021 Hackathon Season" style="width:100%">
-        </a>
-        
-        <!-- Top section --> 
-        <div class="top_section">
-            <div class="logo_container">
-                <div class="logo">
-                    <img src="img/top_section.png">
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 14, 2022 0:0:0").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("days").innerHTML = days;
+
+      document.getElementById("hours").innerHTML = hours;
+
+      document.getElementById("mins").innerHTML = minutes;
+
+      document.getElementById("secs").innerHTML = seconds;
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        // document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+
+      // refreshing page automatically when viewport size change  
+      window.onresize = function(event) {
+        document.location.reload(true);
+      }
+
+      var href = window.location.href.split("/")
+      var html_location = href[href.length-1]
+
+      if (window.innerWidth >= 560 && html_location !== "index.html") {
+          window.location = "index.html";
+      }
+
+      if (window.innerWidth < 560 && html_location !== "index_temporary.html") {
+          window.location = "index_temporary.html";
+      }
+  </script>
+</head>
+
+<nav class="navbar">
+  <div class="logo">
+    <span class="stroke">DandyHacks&nbsp;‘22</span>
+    <span class="no-stroke">DandyHacks&nbsp;‘22</span>
+  </div>
+  
+  <ul class="nav-links">
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <div class="menu">
+      <!--<li><img class="menu-flower" alt="logo" src="./img/favicon.svg" /></li>-->
+      <li><a href="#About_Us">About</a></li>
+      <li><a href="#Tracks">Tracks</a></li>
+      <li><a href="#Schedule">Schedule</a></li>
+      <!--<li><a href="#FAQ_section">FAQs</a></li>-->
+      <li><a href="#Sponsor">Sponsor</a></li>
+      <!--<li><a href="#highlight_section">Highlights</a></li>-->
+    </div>
+  </ul>
+</nav>
+
+<body>
+  <!-- MLH Trust Badge -->
+  <a id="mlh-trust-badge" style="display: block; max-width: 100px; min-width: 60px; position: fixed; right: 50px; top: 59px; width:10%; z-index: 10000" href="https://mlh.io/seasons/2023/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%">
+  </a>
+
+  <!-- HEADER ******************** -->
+  <div class="top_part">
+    <img src="img/top_section.png" class="top_picture">
+  <!--
+    <img src="img/Frame_15.png" class = "timer">
+    <span>
+      <p id="days" style="position: absolute; left: 414px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+      <p id="hours" style="position: absolute; left: 476px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+      <p id="mins" style="position: absolute; left: 538px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+      <p id="secs" style="position: absolute; left: 600px; top: 310px; font-size: x-large; font-weight: bold;"></p>
+    </span>
+  -->
+  </div>
+
+  <div class="container">
+    <div class="all-hills">
+  
+      <!-- TOP HILL - Regiter/Discord ******************** -->
+      <div class="hill" id="hill-top">
+        <div class="hill-content right">
+            <div class="buttons-pole">
+              <img class="pole" src="img/sign-pole.svg">
+              <div class="buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP4fSqh7kw9CxP3c_FgH4ZRcd3v4UjEVhmIl86unsq1Jaoog/viewform?usp=sf_link" target="_blank"><img class="register" src="img/register.svg"></a>
+                <a href="https://discord.gg/EjP74HM3zz" target="_blank"><img class="discord" src="img/join-discord.svg"></a>
+              </div>    
+            </div>
+        </div> 
+      </div>
+
+      <div class="hill" id="hill-about">
+        <div class="hill-content">
+            <div class="wooden-sign shadow"> 
+              <div class="sticks" id="About_Us">
+                <img src="img/sign-stick.svg">
+
+                <div class="content">
+                    <div class="title">
+                        <h2>About Us</h2>
+                    </div>
+
+                    <div class="details">
+                        <p>DandyHacks is the University of Rochester’s annual 42-hour long hackathon. This year will be our 10th anniversary, and we’re so excited to hold this amazing milestone in-person! As a fully student-led organization at a tier 1 research university, we embody our school’s values, encouraging participants to question the world and learn more.</p>
+                        <p>DandyHacks is very beginner-friendly, and we welcome students from all backgrounds and majors. Participating in DandyHacks is not just about winning; it is about collaborating with peers, learning from mentors, and gaining valuable experiences. This year, DandyHacks will take place on Oct 14-16 in the Feldman Ballroom. We hope to see you there!</p>
+                    </div>
                 </div>
-            </div>
-            <div class = "sparkles">
-                <img src="img/Property 1=1.png">
-            </div>
-
-            <div class="sparkles2">
-                <img src="img/Property 1=Default.png">       
-            </div>
-        </div>
-
-        <div class="grainy-overlay">
-          <div class="grainy1"></div>
-          <div class="imperfections"></div>
-        </div>
-        
-        <div class="actions">
-          <div class="interest">
-              <div class="prev-year">
-                  <button onclick=" window.open('index_2021.html','_blank')" class="prev-year-button" type="button">DandyHacks 2021</button>
-                  <button onclick=" window.open('index_2019.html','_blank')" class="prev-year-button" type="button">DandyHacks 2019</button>
+                
+                <img src="img/sign-stick.svg">
               </div>
+            </div>
+          </div> 
+      </div>
 
-              <div class="signup">
-                  <button onclick=" window.open('https://forms.gle/jFyoaT1BgKYtUhCT7','_blank')" class="signup-button" type="button">Early Sign-up</button>
+      <!-- TRACKS ******************** -->
+      <div class="hill" id="hill-tracks">
+        <div class="hill-content">
+          <div class="wooden-sign shadow">
+            <div class="sticks" id="Tracks">
+              <img src="img/sign-stick.svg">
+              <div class="content">
+
+
+                <div class="title">
+                    <h2>Tracks</h2>
+                </div>
+
+                <div class="details">
+                  <h3>Productivity</h3>
+                  <p>Create a project that can help people or processes be more productive. This can relate to education, project management, motivation, and much more.</p>
+                </div>
+
+                <div class="details">
+                  <h3>Video Game</h3>
+                  <p>Create your own video game or create an enhancement to an existing video game.</p>
+                </div>
+
+                <div class="details">
+                  <h3>Community</h3>
+                  <p>Create a project that makes communities stronger and better connected. Ideas of issues to tackle include but are not limited to: diversity, equity, inclusion, and community service.</p>
+                </div>
+
               </div>
-          </div>
-
-          <section class="website_text">
-            <div class="about">
-              <H2>About DandyHacks</H2>
-              <p>DandyHacks is the University of Rochester’s annual 42-hour long hackathon. This year will be our 10th anniversary, and we’re so excited to hold this amazing milestone in-person! As a fully student-led organization at a tier 1 research university, we embody our school’s values, encouraging participants to question the world and learn more. </p>
-              <p>DandyHacks is very beginner-friendly, and we welcome students from all backgrounds and majors. Participating in DandyHacks is not just about winning; it is about collaborating with peers, learning from mentors, and gaining valuable experiences. This year, DandyHacks will take place on Oct 14-16 in the Feldman Ballroom. We hope to see you there!</p>
+              <img src="img/sign-stick.svg">
             </div>
-
-            <div class="FAQs">
-              <h2>FAQs</h2>
-              <h4>What is a hackathon?</h4>
-              <p>A hackathon is an event in which people meet to collaboratively build their ideas using technology.</p>
-
-              <h4>Who is eligible to participate?</h4>
-              <p>Any graduate or undergraduate student over the age of 18 enrolled in a North American institution is eligible. All hackers must be vaccinated and are encouraged to mask while indoors.</p>
-
-              <h4>Do I have to pay to participate?</h4>
-              <p>Hackers do not have to pay to participate. Hackers just need to register and check-in upon arrival. Registration will open up in early September, but you may <a href="https://forms.gle/jFyoaT1BgKYtUhCT7" target="_blank"> pre-register</a> and follow us on Instagram <a href="https://www.instagram.com/dandyhacks" target="_blank">@dandyhacks</a> to stay up to date on all things DandyHacks!</p>
-
-              <h4>Will the hackathon be in-person or virtual?</h4>
-              <p>The hackathon will be fully in-person with a couple online workshops.</p>
-
-              <h4>What safety protocols are in place to protect the community?</h4>
-              <p>University of Rochester COVID-19 <a href="https://www.rochester.edu/coronavirus-update/" target="_blank">protocols</a>.</p>
-
-              <h4>Will I work individually or with a team?</h4>
-              <p>You can work individually or with a team. Each team can have a maximum of 4 people, and don’t worry if you don’t have a team yet! We will make time and communication channels for you to find a team.</p>
-
-              <h4>Can I start hacking before the event?</h4>
-              <p>You may not start hacking before the event, but you can start planning and gathering resources.</p>
-
-              <h4>I still have questions…</h4>
-              <p>Reach out to us at <a href="mailto:greetings@dandyhacks.net" target="_blank">greetings@dandyhacks.net</a> or reach out to us on Instagram <a href="https://www.instagram.com/dandyhacks" target="_blank">@dandyhacks</a>!</p>
-            </div>
-
-            <div class="sponsor">
-              <h2>Sponsoring</h2>
-              <h4>What does a sponsor do? </h4>
-              <p>Sponsors enable us to keep the entire event free for all of our attendees! Sponsors can send us mentors and workshop leaders and gain recognition from our hackers.</p>
-              <h4>Why Sponsor? </h4>
-              <p>As a sponsor, you will be able to: </p>
-              <ul>
-                <li>Connect with top students, and get early access to resumes and portfolios.</li>
-                <li>Showcase your products and see talented students make cool hacks with them.</li>
-                <li>Inspire the next generation of developers to find pride and joy in building awesome things.</li>
-                <li>Attract next generation talent for tech development programs.</li>
-              </ul>
-            </div>
-
-            <div class="tracks">
-              <h2>Tracks</h2>
-              <p>Choose one track to submit your project into. Each track will have three top winners, and each project may only win in one track. Each track will have different prizes, so pick and choose your track depending on which prize you want to win!</p>
-
-              <h4>Productivity</h4>
-              <p>Create a project that can help people or processes be more productive. This can relate to education, project management, motivation, and much more.</p>
-
-              <h4>Video Game</h4>
-              <p>Create your own video game or create an enhancement to an existing video game.</p>
-
-              <h4>Community</h4>
-              <p>Create a project that makes communities stronger and better connected. Ideas of issues to tackle include but are not limited to: diversity, equity, inclusion, and community service.</p>
-
-              <p>All projects will also be eligible to win a side challenge, even if the project is already a top three winner in a track.</p>
-            </div>
-
-            <div class="side_challenges">
-              <h2>Side Challenges</h2>
-              <p>Your project will automatically be considered to win a side challenge. Each side challenge will have one winner. All projects will be eligible to win a side challenge, whether or not they have placed in a track.</p>
-            </div>
-          </section>
-    </body>
-    
-    <footer>
-      <div class="social">
-            <ul class="icons">
-              <li>
-                <a href="mailto:greetings@dandyhacks.net" target="_blank">
-                  <img id="email" src="img/Email 1.png" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/dandyhacks" target="_blank">
-                  <img id="instagram" src="img/Instagram 1.png" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/DandyHacks" target="_blank">
-                  <img id="facebook" src="img/Facebook 1.png" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/dandyhacks" target="_blank">
-                  <img id="twitter" src="img/Twitter 1.png" />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- MLH Code of Conduct -->
-          <div class="mlh">
-              <a href="http://mlh.io/code-of-conduct" target="_blank">
-                  MLH Code of Conduct
-              </a>
           </div>
         </div>
+      </div>
 
-        <div class="end">
-            <p>© 2022 DandyHacks</p>
+      <!-- SCHEDULE ******************** -->
+      <div class="hill" id="hill-schedule">
+        <div class="hill-content">
+            <div class="wooden-sign shadow"> 
+              <div class="sticks" id="Schedule">
+                <img src="img/sign-stick.svg">
+
+                <div class="content">
+                    <div class="title">
+                        <h2>Schedule</h2>
+                    </div>
+
+                    <div class="details">
+                      <img src="img/schedule-coming-soon.svg">
+                    </div>
+                </div>
+                
+                <img src="img/sign-stick.svg">
+              </div>
+            </div>
+          </div> 
+      </div>
+
+      <!-- TRACKS ******************** -->
+      <div class="hill" id="hill-sponsoring">
+        <div class="hill-content">
+          <div class="wooden-sign shadow">
+            <div class="sticks" id="Sponsor">
+              <img src="img/sign-stick.svg">
+              <div class="content">
+
+                <div class="title">
+                    <h2>Sponsoring</h2>
+                </div>
+
+                <div class="details">
+                  <h3>What does a sponsor do?</h3>
+                  <p>Sponsors enable us to keep the entire event free for all of our attendees! Sponsors can send us mentors and workshop leaders and gain recognition from our hackers.</p>
+                </div>
+
+                <div class="details">
+                  <h3>Why sponsor?</h3>
+                  <p>As a sponsor, you will be able to:</p>
+                  <ul>
+                    <li>Connect with top students, and get early access to resumes and portfolios.</li>
+                    <li>Showcase your products and see talented students make cool hacks with them.</li>
+                    <li>Inspire the next generation of developers to find pride and joy in building awesome things.</li>
+                    <li>Attract next generation talent for tech development programs.</li>
+                  </ul>
+                </div>
+
+              </div>
+              <img src="img/sign-stick.svg">
+            </div>
+          </div>
         </div>
-    </footer>
-    
+      </div>
+      
+      <div>
+
+      </div>
+  </div>
+
+
+</body>
+
+
+<footer>
+  <div class="left">
+    <div class="email">
+      <a href="mailto: greetings@dandyhacks.com" target="_blank">greetings@dandyhacks.com</a>
+    </div>
+    <div class="social">
+      <ul class="icons">
+        <li>
+          <a href="mailto:greetings@dandyhacks.net" target="_blank">
+            <img id="email" src="img/Email 1.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/dandyhacks" target="_blank">
+            <img id="instagram" src="img/Instagram 1.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/DandyHacks" target="_blank">
+            <img id="facebook" src="img/Facebook 1.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/dandyhacks" target="_blank">
+            <img id="twitter" src="img/Twitter 1.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="right">
+    <div class="mlh">
+      <a href="http://mlh.io/code-of-conduct" target="_blank">
+        MLH Code of Conduct
+      </a>
+    </div>
+    <div class="copyright">
+      © 2022 DandyHacks
+    </div>
+  </div>
+</footer>
+
 </html>
