@@ -1,0 +1,74 @@
+@font-face {
+    font-family: AT Nezue;
+    src: url(./font/NEZUE\ ExtraBold.otf);
+}
+
+
+header {
+    background-color: #E9F6F1;
+    overflow:auto;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    z-index: 500;
+}
+
+.navbar {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlist {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+    float:right;
+    gap: 1em;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.navlist li a {
+    margin: 15px;
+    text-decoration: none;
+  
+    color: #254E1E;
+    font-family: 'AT Nezue';
+    font-size: 20px;
+}
+
+.stroke{
+    -webkit-text-stroke: 3px #254E1E;
+}
+
+.no-stroke{
+    position: absolute;
+}
+  
+.logo {
+    margin-top: 3px;
+    margin-left: 36px;
+
+    font-weight: bold;
+    font-family: 'AT Nezue';
+    font-style: normal;
+    font-size: 28px;
+    display: flex;
+    color: #9FC299;
+    text-shadow: -1.5px 2px 0px #254E1E;
+
+    
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */ 
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #D2ECE1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
