@@ -9,7 +9,7 @@ body {
   background-color: #D2ECE1;
   background-image: url("img/sky-section.svg");
   background-repeat: no-repeat;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .navbar {

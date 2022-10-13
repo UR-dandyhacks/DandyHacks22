@@ -69,6 +69,6 @@ header {
 body {
     padding: 0;
     margin: 0;
-    background-color: #D2ECE1;
+    /* background-color: #D2ECE1; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
